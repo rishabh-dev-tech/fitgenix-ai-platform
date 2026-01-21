@@ -1,0 +1,165 @@
+/* =========================
+   PROFESSIONAL LOGIN PAGE
+========================= */
+
+.auth-pro {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+/* LEFT SIDE BRAND */
+
+.auth-pro-left {
+  background: linear-gradient(135deg,#4f46e5,#6366f1,#8b5cf6);
+  color: white;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-pro-left h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.auth-pro-left p {
+  margin-top: 14px;
+  max-width: 420px;
+  opacity: 0.9;
+}
+
+.auth-highlights {
+  margin-top: 30px;
+  display: grid;
+  gap: 10px;
+  font-weight: 500;
+}
+
+/* RIGHT SIDE FORM */
+
+.auth-pro-right {
+  background: linear-gradient(180deg,#f8fafc,#eef2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.auth-pro-card {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 34px;
+  border-radius: 26px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+}
+
+.auth-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg,#4f46e5,#8b5cf6);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.auth-pro-card h3 {
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+.auth-pro-card p {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.auth-pro-form {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-pro-form input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  outline: none;
+}
+
+.auth-pro-form input:focus {
+  border-color: #4f46e5;
+}
+
+.auth-pro-footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.auth-pro-footer span {
+  color: #4f46e5;
+  font-weight: 600;
+}
+/* PASSWORD EYE */
+.password-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-box input {
+  width: 100%;
+  padding-right: 44px;
+}
+
+
+.eye-icon {
+  position: absolute;
+  right: 14px;
+  cursor: pointer;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.eye-icon:hover {
+  color: #4f46e5;
+  transform: scale(1.08);
+}
+
+/* FORGOT PASSWORD */
+.forgot-box {
+  text-align: right;
+  margin-top: -6px;
+}
+
+.forgot-box a {
+  font-size: 0.85rem;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.forgot-box a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .auth-pro {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-pro-left {
+    display: none;
+  }
+}

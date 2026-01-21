@@ -1,0 +1,110 @@
+.programs-page {
+  color: white;
+}
+
+.program-sub {
+  margin-top: 6px;
+  color: #cfd3ff;
+}
+
+.program-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 24px;
+}
+
+.program-card {
+  background: #0f1424;
+  border-radius: 18px;
+  padding: 26px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+}
+
+.program-card h3 {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.program-card p {
+  color: #cfd3ff;
+  line-height: 1.5;
+}
+
+.program-card ul {
+  margin: 16px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.program-card li {
+  margin-bottom: 6px;
+  color: #cfd3ff;
+}
+
+.program-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg,#6d7cff,#9f71ff);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.program-card.active {
+  border: 1px solid #6d7cff;
+  box-shadow: 0 0 20px rgba(109,124,255,0.4);
+}
+
+/* 📱 Tablets */
+@media (max-width: 900px) {
+  .programs-page {
+    padding: 10px;
+  }
+
+  .program-sub {
+    font-size: 0.95rem;
+  }
+
+  .program-card {
+    padding: 22px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .programs-page h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .program-sub {
+    text-align: center;
+  }
+
+  .program-grid {
+    gap: 18px;
+  }
+
+  .program-card {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .program-card ul {
+    margin: 14px 0;
+  }
+
+  .program-card button {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+}
