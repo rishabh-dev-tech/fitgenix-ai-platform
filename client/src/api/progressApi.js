@@ -1,23 +1,13 @@
-import axios from "axios";
-
-const API = axios.create({
-  baseURL: "https://fitgenix-ai-platform-1.onrender.com"
-});
-
-/* Attach token automatically */
-API.interceptors.request.use((req) => {
-  const token = localStorage.getItem("flexaura_token");
-  if (token) {
-    req.headers.Authorization = `Bearer ${token}`;
-  }
-  return req;
-});
+import api from "./axios";
 
 /* ADD PROGRESS */
-export const addProgress = (data) => API.post("/progress", data);
+export const addProgress = (data) =>
+  api.post("/progress", data);
 
 /* GET ALL MY PROGRESS */
-export const getMyProgress = () => API.get("/progress");
+export const getMyProgress = () =>
+  api.get("/progress");
 
 /* GET LATEST PROGRESS */
-export const getLatestProgress = () => API.get("/progress/latest");
+export const getLatestProgress = () =>
+  api.get("/progress/latest");

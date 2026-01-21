@@ -1,9 +1,9 @@
-import axios from "./axios";
+import api from "./axios";
 
 export const createWorkout = (data) => {
-  return axios.post("/workouts", data);
+  return api.post("/workouts", data);
 };
 
 export const getMyWorkouts = () => {
-  return axios.get("/workouts/my");
+  return api.get("/workouts/my");
 };

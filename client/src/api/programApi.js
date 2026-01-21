@@ -1,9 +1,9 @@
-import axios from "./axios";
+import api from "./axios";
 
 export const getPrograms = () => {
-  return axios.get("/programs");
+  return api.get("/programs");
 };
 
 export const selectProgram = (programId) => {
-  return axios.post("/programs/select", { programId });
+  return api.post("/programs/select", { programId });
 };

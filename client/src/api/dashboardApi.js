@@ -1,3 +1,4 @@
-import API from "./api";
+import api from "./axios";
 
-export const getDashboardData = () => API.get("/dashboard");
+export const getDashboardData = () =>
+  api.get("/dashboard");

@@ -1,5 +1,5 @@
-import axios from "./axios";
+import api from "./axios";
 
 export const getMe = () => {
-  return axios.get("/users/me");
+  return api.get("/users/me");
 };
